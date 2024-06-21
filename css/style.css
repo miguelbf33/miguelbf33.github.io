@@ -1,0 +1,351 @@
+/*Fuentes de texto de google*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*HOME*/
+.home{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../img/fondo.png");
+    background-size: cover;
+    background-position: center center;
+    color: aliceblue;
+
+}
+.home .contenido_seccion{
+    max-width: 1000px;
+    margin:auto;
+    text-align: center;
+    padding: 0 10px;
+
+}
+.home .contenido_seccion header{
+    padding: 30px;
+}
+/*menú a la derecha*/
+.home .contenido_seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: rgb(19, 102, 111);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.home .contenido_seccion header nav a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.home .contenido_seccion header .logo{
+    color: rgb(19, 102, 111);
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Montserrat";
+    text-shadow: 0 0 35px aliceblue;
+}
+.home .contenido_seccion header .menu{
+    position: fixed;
+    background-color: rgb(19, 102, 111);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.home .contenido_seccion header .menu:hover{
+    box-shadow:0 0 35px aliceblue;
+}
+.home .contenido_seccion .informacion{
+    padding-bottom: 130px;
+
+}
+.home .contenido_seccion .informacion h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.home .contenido_seccion .informacion h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -5px;
+    letter-spacing: 2px;
+}
+.home .contenido_seccion .informacion .redesSociales{
+margin: 20px 0;
+}
+.home .contenido_seccion .informacion .redesSociales a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:black ;
+    color: rgb(19, 102, 111);
+    border: 1px solid rgb(19, 102, 111);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.home .contenido_seccion .informacion .redesSociales a:hover{
+    color: aliceblue;
+    background-color:rgb(19, 102, 111) ;
+    box-shadow: 0 0 20px aliceblue;
+
+}
+.home .contenido_seccion .fotoPerfil{
+    position: relative;
+
+}
+.home .contenido_seccion .fotoPerfil img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(19, 102, 111);
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+/*general*/
+.titulo{
+    margin-top: 50px;
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+/*SOBRE MI*/
+.sobreMi{
+    background-color: aliceblue;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobreMi .contenido_seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobreMi .contenido_seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobreMi .contenido_seccion .especial{
+    color: rgb(19, 102, 111);
+    font-weight: bold;
+    margin-top:15px ;
+
+}
+.sobreMi .contenido_seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+.sobreMi .contenido_seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobreMi .contenido_seccion .fila .col{
+    width: 30%;
+}
+.sobreMi .contenido_seccion .fila .col i{
+    color: rgb(19, 102, 111);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(19, 102, 111);
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobreMi .contenido_seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/*HABILIDADES*/
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../img/fondo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+color: aliceblue;
+}
+.habilidades .contenido_seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.habilidades .contenido_seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.habilidades .contenido_seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.habilidades .contenido_seccion .fila .col{
+    width: 47%;
+    text-align: left;
+}
+.habilidades .contenido_seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido_seccion .barra{
+    display: flex;
+    border: 1px solid rgb(19, 102, 111);
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido_seccion .barra .e{
+    background-color:black ;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+/*experiencia laboral*/
+.resumen{
+    background-color: aliceblue;
+    padding: 140px 0 100px 0;
+    text-align: center;
+
+}
+.resumen .contenido_seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido_seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido_seccion .informacion{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido_seccion .informacion .col{
+    width: 45%;
+}
+.resumen .contenido_seccion .informacion .col .titulo{
+    display: inline-block;
+    color: rgb(19, 102, 111);
+    font-weight: bold;
+    border: 2px solid rgb(19, 102, 111);
+    padding: 10px;
+
+
+}
+.resumen .contenido_seccion .informacion .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido_seccion .informacion .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid gray;
+}
+.resumen .contenido_seccion .informacion .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido_seccion .informacion .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido_seccion .informacion .col table p{
+    font-size: 14px;
+}
+.resumen .contenido_seccion .informacion .col table .promedio{
+    display: block;
+    color: rgb(19, 102, 111);
+    margin-top: 10px;
+    font-weight: bold;
+}
+.resumen .contenido_seccion .informacion .col table .descripcion{
+    border-left: 1px solid grey;
+    padding-left: 2px;
+}
+
+/*CONTACTO*/
+.contacto{
+    background-color: black;
+    padding: 140px 0 100px 0;
+    color: aliceblue;
+    text-align: center;
+
+}
+.contacto .contenido_seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido_seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido_seccion .fila{
+    display: flex;
+    justify-content: space-around;
+
+}
+.contacto .contenido_seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido_seccion .fila .col h2{
+    color: rgb(19, 102, 111);
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    .habilidades .contenido_seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido_seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido_seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobremi .contenido_seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido_seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido_seccion .informacion{
+        display: block;
+    }
+    .resumen .contenido_seccion .informacion .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido_seccion .informacion .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido_seccion .informacion .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido_seccion .fila{
+        display: block;
+    }
+}
